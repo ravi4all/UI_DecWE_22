@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- Login, Register, Search, Upload, Comment -->
+    
+    <!-- method - get, post -->
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="box_1">Enter Name</label>
+                </td>
+                <td>
+                    <input type="text" name="username" id="box_1" placeholder="Enter Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="box_2">Enter Email</label>
+                </td>
+                <td>
+                    <input type="text" name="usermail" id="box_2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="box_3">Enter Password</label>
+                </td>
+                <td>
+                    <input type="password" name="userpwd" id="box_3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="box_4">Enter City</label>
+                </td>
+                <td>
+                    <!-- <select name="city" id="box_4">
+                        <option>Enter City</option>
+                        <option value="pune">Pune</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="noida">Noida</option>
+                        <option value="gzb">Ghaziabad</option>
+                        <option value="rohini">Rohini</option>
+                        <option value="surat">Surat</option>
+                        <option value="jaipur">Jaipur</option>
+                    </select> -->
+
+                    <select name="city" id="box_4">
+                        <option>Enter City</option>
+                        <optgroup label="Delhi">
+                            <option value="rohini">Rohini</option>
+                            <option value="rohini">Kashmiri Gate</option>
+                            <option value="rohini">Dilshad Graden</option>
+                        </optgroup>
+                        <optgroup label="UP">
+                            <option value="noida">Noida</option>
+                            <option value="gzb">Ghaziabad</option>
+                            <option value="lknw">Lucknow</option>
+                        </optgroup>
+                        <optgroup label="Maharastra">
+                            <option value="pune">Pune</option>
+                            <option value="pune">Nagpur</option>
+                            <option value="pune">Mumbai</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Gender</td>
+                <td>
+                    <input type="radio" id="m" name="gender" value="m">
+                    <label for="m">Male</label>
+                    <input type="radio" id="f" name="gender" value="f">
+                    <label for="f">Female</label>
+                    <input type="radio" id="o" name="gender" value="o">
+                    <label for="o">Others</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Hobby</td>
+                <td>
+                    <input type="checkbox" value="cricket" name="hobby_1"> Cricket
+                    <input type="checkbox" value="football" name="hobby_2"> Football
+                    <input type="checkbox" value="hockey" name="hobby_3"> Hockey
+                    <input type="checkbox" value="chess" name="hobby_4"> Chess
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
