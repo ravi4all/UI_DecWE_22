@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Nested Selector */
+        /* #section-1 h2 {
+            color: red;
+        } */
+
+        #section-1 .child h2 {
+            color: red;
+        }
+
+        #section-2 .child h2 {
+            color: blue;
+        }
+
+        .child h2 {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Selectors</h1>
+
+    <div id="section-1">
+        <h2>This heading is inside section_1</h2>
+        <div class="child">
+            <h2>This heading is inside section_1 child</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="section-2">
+        <h2>This heading is inside section_2</h2>
+        <div class="child">
+            <h2>This heading is inside section_2 child</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
