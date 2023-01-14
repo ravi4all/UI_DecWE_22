@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    background-image: url("https://media.wired.com/photos/592675f6cefba457b079a0cd/master/pass/SCG003S-FRONTTA.jpg");
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 500px;
+}
+
+#div_1 {
+    background-image: url("https://hips.hearstapps.com/roa.h-cdn.co/assets/16/40/1475771426-topewse.jpg");
+}
+#div_2 {
+    background-image: url("https://i.pinimg.com/originals/1d/09/a8/1d09a8ccb3498cb2ce84b8cee2fd2bf4.png");
+}
+#div_3 {
+    background-image: url("https://blog.dupontregistry.com/wp-content/uploads/2021/10/2023-corvette-z06-3.jpg");
+}
+#div_4 {
+    background-image: url("https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-corvette-stingray-c8-2019-fd-hr-hero-front_0.jpg?itok=SEYe_vLy");
+}
+#div_5 {
+    background-image: url("https://cars.usnews.com/pics/size/390x290/images/Auto/izmo/i159614776/2022_chevrolet_corvette_stingray_angularfront.jpg");
+}
