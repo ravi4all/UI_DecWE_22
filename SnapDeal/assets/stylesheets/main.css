@@ -1,0 +1,113 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Helper Classes */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* Common Settings */
+.container {
+    width: 1330px;
+    margin: 0 auto;
+}
+
+#topbar {
+    background-color: #C6003D;
+    color: #fff;
+    padding: 8px 0px;
+}
+#topbar a{
+    color: #fff;
+}
+#topbar p {
+    font-size: 12px;
+}
+#topbar .col-2 ul li {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0px 10px;
+}
+
+#header {
+    background-color: #E40046;
+}
+#header .logo {
+    width: 15%;
+}
+#header .search {
+    width: 50%;
+}
+#header .search input[type="text"] {
+    width: 83%;
+    height: 35px;
+}
+#header .search button {
+    height: 38px;
+    width: 15%;
+    margin-left: -5px;
+}
+
+#header .user-actions {
+    width: 20%;
+}
+#header .user-actions ul li {
+    display: inline-block;
+}
+#header .user-actions ul li a {
+    color: #fff;
+}
+
+#main-navigation {
+
+}
+
+#banner {
+
+}
+
+#main {
+
+}
+
+#sidebar {
+
+}
+
+#footer {
+
+}
+
