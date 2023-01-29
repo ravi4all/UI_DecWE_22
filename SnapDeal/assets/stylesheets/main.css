@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: #F7F7F7;
 }
 
 ul {
@@ -64,12 +65,15 @@ a {
 
 #header {
     background-color: #E40046;
+    padding-top: 5px;
 }
 #header .logo {
     width: 15%;
+    padding-top: 10px;
 }
 #header .search {
     width: 50%;
+    padding-top: 10px;
 }
 #header .search input[type="text"] {
     width: 83%;
@@ -89,18 +93,79 @@ a {
 }
 #header .user-actions ul li a {
     color: #fff;
+    display: block;
+    padding: 20px 28px;
+}
+
+#header .user-actions .dropdown-container a:hover {
+    background-color: #333333;
+}
+#header .user-actions i {
+    font-size: 20px;
+}
+#header .user-actions .dropdown-container i {
+    margin-left: 6px;
+}
+
+#content {
+    margin-top: 20px;
 }
 
 #main-navigation {
+    width: 15%;
+    padding: 20px 0px 10px 8px;
+    background-color: #fff;
+}
 
+#main-navigation .widget {
+    margin-bottom: 15px;
+}
+
+#main-navigation h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#main-navigation ul li a {
+    color: #666;
+    display: block;
+    padding: 10px 0px 10px 8px;
+    /* width: 100%; */
+    cursor: default;
+    font-size: 12px;
+}
+#main-navigation ul li a:hover {
+    color: #000;
+    background-color: #FAFAFA;
+    border-left: 2px solid red;
 }
 
 #banner {
-
+    
+}
+#banner .banner-img {
+    width: 80%;
+}
+#banner .location {
+    width: 15%;
 }
 
 #main {
+    width: 80%;
+    margin-left: 2.5%;
+}
 
+.products .product {
+    display: inline-block;
+    width: 19%;
+    color: #000;
+    font-size: 12px;
+}
+.products .product a {
+    color: #000;
+    font-size: 12px;
 }
 
 #sidebar {
