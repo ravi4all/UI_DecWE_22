@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #about, #skills, #projects, #contact {
+            display: none;
+        }
+        #about:target {
+            display: block;
+        }
+        #about:target ~ #home {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+    <section id="about">
+        <h2>This is about section</h2>
+    </section>
+    <hr>
+    <section id="skills">
+        <h2>This is skills section</h2>
+    </section>
+    <hr>
+    <section id="projects">
+        <h2>This is projects section</h2>
+    </section>
+    <hr>
+    <section id="contact">
+        <h2>This is contact section</h2>
+    </section>
+
+    <section id="home">
+        <h2>This is home section</h2>
+    </section>
+    
+    
+</body>
+</html>

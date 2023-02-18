@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* global variable */
+        :root {
+            --text-color: blue;
+            --text-fallback-color: red;
+            --img-height: 200px;
+        }
+        p {
+            color: var(--text-color);
+        }
+        h2, h3 {
+            color: var(--text-color, var(--text-fallback-color));
+        }
+        img {
+            height: var(--img-height);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>var()</h1>
+
+    <h2>This is some heading</h2>
+    <h3>This is some heading</h3>
+    
+</body>
+</html>
