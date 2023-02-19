@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 10%;
+            position: absolute;
+            bottom: 0px;
+            left: calc(100vw/2 - 5%);
+            animation: ball 5s infinite linear;
+        }
+        @keyframes ball {
+            0% {
+                top: calc(100vh - 20%);
+                left: calc(100vw/2 - 5%);
+                transform: rotate(720deg);
+            }
+            25% {
+                top: calc(100vh/2 - 5%);
+                left: 0;
+            }
+            50% {
+                top: 0px;
+                left: calc(100vw/2 - 5%);
+            }
+            75% {
+                top: calc(100vh/2 - 5%);
+                left: calc(100vw - 10%);
+            }
+            100% {
+                top: calc(100vh - 20%);
+                left: calc(100vw/2 - 5%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="../../images/Football.png" alt="">
+    
+</body>
+</html>

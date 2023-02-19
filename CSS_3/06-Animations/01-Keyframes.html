@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+        img {
+            /* animation-name: anim_1; */
+            /* animation-duration: 10s; */
+            /* animation-fill-mode: forwards; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate; */
+            /* animation-timing-function: ease; */
+            /* animation-timing-function: linear; */
+            animation: anim_1 10s infinite linear;
+        }
+        /* @keyframes anim_1 {
+            from {
+                transform: translate(0px, 0px);
+            }
+            to {
+                transform: translate(calc(100vw - 200px), 0px);
+            }
+        } */
+        @keyframes anim_1 {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            45% {
+                transform: translate(calc(100vw - 200px), 0px);
+            }
+            50% {
+                transform: translate(calc(100vw - 200px), 0px) rotateY(180deg);
+            }
+            100% {
+                transform: translate(0px, 0px) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Animation Keyframes</h1>
+
+    <div>
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div>
+
+    
+</body>
+</html>
