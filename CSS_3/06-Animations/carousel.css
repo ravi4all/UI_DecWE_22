@@ -1,0 +1,35 @@
+body {
+    overflow-x: hidden;
+}
+#slider {
+    width: 500%;
+    animation: slider 10s infinite;
+}
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+.slide {
+    width: 20%;
+    display: inline-block;
+    margin: 0px -2px;
+}
+
+@keyframes slider {
+    0%,15% {
+        transform: translateX(0%);
+    }
+    20%,35% {
+        transform: translateX(-20%);
+    }
+    40%,45% {
+        transform: translateX(-40%);
+    }
+    60%,75% {
+        transform: translateX(-60%);
+    }
+    80%,95% {
+        transform: translateX(-80%);
+    }
+}
