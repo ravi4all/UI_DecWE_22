@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1500px;
+            margin: 0 auto;
+        }
+        .row {
+            gap: 20px;
+            display: grid;
+            /* grid-template-columns: 25% 25% 25% 25%; */
+            grid-template-columns: repeat(4, 25%);
+            justify-content: center;
+        }
+        .col {
+            background-color: lightgray;
+            padding: 10px;
+            border: 2px solid red;
+        }
+        .col-1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .col-7 {
+            grid-column: 2/5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grid Demo</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-1">
+                <h2>This is column_1</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa temporibus. Sequi dolores nam voluptatibus repellat exercitationem ducimus, minus hic placeat pariatur eveniet vero dicta esse impedit. Quasi, voluptas rem.
+                </p>
+            </div>
+            <div class="col col-2">
+                <h2>This is column_2</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa temporibus. Sequi dolores nam voluptatibus repellat exercitationem ducimus, minus hic placeat pariatur eveniet vero dicta esse impedit. Quasi, voluptas rem.
+                </p>
+            </div>
+            <div class="col col-3">
+                <h2>This is column_3</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa temporibus. Sequi dolores nam voluptatibus repellat exercitationem ducimus, minus hic placeat pariatur eveniet vero dicta esse impedit. Quasi, voluptas rem.
+                </p>
+            </div>
+            <div class="col col-4">
+                <h2>This is column_4</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa temporibus. Sequi dolores nam voluptatibus repellat exercitationem ducimus, minus hic placeat pariatur eveniet vero dicta esse impedit. Quasi, voluptas rem.
+                </p>
+            </div>
+            <div class="col col-5">
+                <h2>This is column_5</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa temporibus. Sequi dolores nam voluptatibus repellat exercitationem ducimus, minus hic placeat pariatur eveniet vero dicta esse impedit. Quasi, voluptas rem.
+                </p>
+            </div>
+            <div class="col col-6">
+                <h2>This is column_6</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa temporibus. Sequi dolores nam voluptatibus repellat exercitationem ducimus, minus hic placeat pariatur eveniet vero dicta esse impedit. Quasi, voluptas rem.
+                </p>
+            </div>
+            <div class="col col-7">
+                <h2>This is column_7</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ipsa temporibus. Sequi dolores nam voluptatibus repellat exercitationem ducimus, minus hic placeat pariatur eveniet vero dicta esse impedit. Quasi, voluptas rem.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
