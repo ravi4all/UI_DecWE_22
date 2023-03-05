@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 0px;
+            text-align: justify;
+        }
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            /* align-items: flex-start; */
+            align-items: stretch;
+        }
+        .col {
+            border: 2px solid red;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .col-1 {
+            width: 20%;
+        }
+        .col-2 {
+            width: 45%;
+        }
+        .col-3 {
+            width: 20%;
+            /* align-self: center; */
+            align-self: stretch;
+        }
+        img {
+            width: 100%;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            row-gap: 20px;
+        }
+        li {
+            height: 200px;
+            width: 400px;
+            /* width: 23%; */
+            background-color: red;
+            border: 1px solid;
+        }
+        @media(max-width: 1200px) {
+            .row {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .col-1 {
+                width: 40%;
+            }
+            .col-2 {
+                width: 50%;
+            }
+            .col-3 {
+                width: 100%;
+            }
+        }
+        @media(max-width: 768px) {
+            .col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Media Queries</h1>
+
+    <div class="row">
+        <div class="col col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestias accusamus perferendis mollitia excepturi esse ullam accusantium, quis ut nemo odit repudiandae nobis sint. Iusto officia rerum vero dignissimos itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat impedit fugiat ab eum. Ab architecto quos quaerat, ad aliquam reiciendis vel officiis a similique? Nulla autem officia sapiente praesentium id.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veritatis quos obcaecati ad labore, provident eaque ipsam? Perferendis rerum voluptas cumque quaerat nesciunt praesentium, eos incidunt, vel ipsa modi asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, porro molestiae magni, hic praesentium dolore, ad maiores possimus ipsum alias eius nulla distinctio modi! Quo laboriosam culpa doloremque corporis consequuntur.
+            </p>
+        </div>
+        <div class="col col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestias accusamus perferendis mollitia excepturi esse ullam accusantium, quis ut nemo odit repudiandae nobis sint. Iusto officia rerum vero dignissimos itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat impedit fugiat ab eum. Ab architecto quos quaerat, ad aliquam reiciendis vel officiis a similique? Nulla autem officia sapiente praesentium id.
+            </p>
+            <img src="../../images/WebImages/batman_arkham_knight-1366x768.jpg" alt="">
+        </div>
+        <div class="col col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestias accusamus perferendis mollitia excepturi esse ullam accusantium, quis ut nemo odit repudiandae nobis sint. Iusto officia rerum vero dignissimos itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat impedit fugiat ab eum. Ab architecto quos quaerat, ad aliquam reiciendis vel officiis a similique? Nulla autem officia sapiente praesentium id.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+</body>
+</html>
