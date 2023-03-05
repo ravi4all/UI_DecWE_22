@@ -1,0 +1,185 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Helper Classes */
+.row {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-center {
+    align-items: center;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* Common Settings */
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+/* Topbar */
+#topbar {
+    padding: 5px 15px;
+    text-align: center;
+}
+#topbar .col-1 {
+    width: 5%;
+}
+#topbar .col-2 {
+    width: 20%;
+}
+#topbar .col-3 {
+    width: 15%;
+}
+
+#topbar .col-1 span {
+    color: #525252;
+    font-weight: 700;
+    font-size: 14px;
+}
+#topbar .col-2 a,
+#topbar .col-2 img {
+    vertical-align: middle;
+}
+#topbar .col-2 img[alt="wpl-img"] {
+    width: 20%;
+}
+#topbar .col-3 ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header {
+
+}
+#header .container {
+    width: 1800px;
+}
+#header .header-top {
+    background: linear-gradient(92.04deg,#18184a 24.18%,#19398a 50.95%,#18184a 110.32%);
+}
+#header .logo {
+    width: 6%;
+}
+#header .logo img{
+    width: 100%;
+}
+#header .header-top .user-section {
+    width: 15%;
+}
+#header .header-top .user-section i {
+    color: #fff;
+}
+
+#main-nav {
+    width: 50%;
+}
+#main-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+#main-nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#banner {
+    background-image: url("https://www.iplt20.com/assets/images/banner_bg.jpg");
+    background-size: 100% 100%;
+}
+#banner .col-1 {
+    height: 80vh;
+    width: 70%;
+}
+
+#banner .slider {
+    background-image: url("https://assets.iplt20.com/bcci/articles/1675149141_BCCI%20Logo.webp");
+    animation: slider 10s infinite;
+    background-size: 100% 100%;
+    height: inherit;
+    position: relative;
+}
+@keyframes slider {
+    0% {
+        background-image: url("https://assets.iplt20.com/bcci/articles/1675149141_BCCI%20Logo.webp");
+    }
+    20% {
+        background-image: url("https://assets.iplt20.com/bcci/articles/1676635983__RAJ0314.jpg");
+    }
+    40% {
+        background-image: url("https://assets.iplt20.com/bcci/articles/1676480838_1652625591_IPL%20background%20for%20WEB_corp%20logo-01.webp");
+    }
+    60% {
+        background-image: url("https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/a278511c-1765-42a0-bfbf-5f99718f5aa7/323706c5-2ed1-425b-bd52-aaef1ff33038/1280x720/match/image.jpg");
+    }
+    80% {
+        background-image: url("https://assets.iplt20.com/bcci/articles/1676635983__RAJ0314.jpg");
+    }
+    100% {
+        background-image: url("https://assets.iplt20.com/bcci/articles/1675149141_BCCI%20Logo.webp");
+    }
+}
+
+#banner .slider::before {
+    content: "";
+    background: linear-gradient(0deg,#000 0,rgba(0,0,0,0) 77.79%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#main {
+
+}
+
+#sidebar {
+
+}
+
+#footer {
+
+}
+
