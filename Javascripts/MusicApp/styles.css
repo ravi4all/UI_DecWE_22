@@ -1,0 +1,9 @@
+#musicPlayer {
+    position: fixed;
+    background-color: darkblue;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    padding: 40px 0px;
+}
