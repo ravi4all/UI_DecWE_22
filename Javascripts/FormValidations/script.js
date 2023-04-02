@@ -21,6 +21,7 @@ function init() {
     // }
 
     document.querySelector("#box_2").addEventListener("change", checkUsername);
+    document.querySelector("#box_4").addEventListener("keyup", checkPasswordStrength);
 }
 
 function validateForm() {
@@ -69,5 +70,24 @@ function checkUsername() {
         else {
             profileMsgSpan.innerHTML = "";
         }
+    }
+}
+
+function checkPasswordStrength() {
+    var password = this.value;
+    // console.log(password);
+    var pwd_span = document.querySelector("#pwd_strength");
+    // pwd_span.innerHTML = password;
+    if(password.length == 0) {
+        pwd_span.innerHTML = "Please Enter your Password...";
+    }
+    else if(password.length > 0 && password.length < 5) {
+        pwd_span.innerHTML = "Weak Password";
+    }
+    else if(password.length >=5 && password.length < 8) {
+        pwd_span.innerHTML = "Average Password";
+    }
+    else {
+        pwd_span.innerHTML = "Strong Password";
     }
 }

@@ -1,0 +1,41 @@
+body {
+    /* overflow: scroll; */
+}
+#content {
+    height: 100%;
+    position: fixed;
+    top: 100px;
+    overflow-y: scroll;
+}
+#musicPlayer {
+    position: fixed;
+    background-color: darkblue;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    padding: 40px 0px;
+}
+
+#trending-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-evenly;
+    /* overflow: scroll; */
+}
+#trending-list li {
+    width: 17%;   
+    margin-bottom: 20px;
+}
+#trending-list li:hover {
+    cursor: pointer;
+}
+#trending-list li h3 {
+    font-size: 18px;
+}
+#trending-list img {
+    height: 200px;
+}
