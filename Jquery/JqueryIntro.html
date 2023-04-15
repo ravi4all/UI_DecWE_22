@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Jquery Introduction</h1>
+
+    <button id="btn_1">Click Here to hide...</button>
+    <button id="btn_2">Click Here to show...</button>
+    <button id="btn_3">Click Here to toggle...</button>
+
+    <div>
+        <img src="../images/WebImages/avengers-thor.jpg" alt="">
+    </div>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+        $("#btn_1").click(function() {
+            $("img").hide(2000);
+        });
+        $("#btn_2").click(function() {
+            $("img").show(2000);
+        });
+        $("#btn_3").click(function() {
+            $("img").toggle(2000);
+        });
+    </script>
+    
+</body>
+</html>
