@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Jquery Effects</h1>
+
+    <!-- FadeIn/FadeOut
+    Hide/Show
+    SlideUp/SlideDown -->
+   
+    <button id="btn_1">Hide</button>
+    <button id="btn_2">Show</button>
+    <button id="btn_3">Toggle</button>
+
+    <hr>
+    <div>
+        <img src="../images/dhoni.jpg" alt="">
+    </div>
+    
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+        // $('#btn_1').on('click', function() {
+        //     $('img').hide(1000);
+        // });
+        // $('#btn_2').on('click', function() {
+        //     $('img').show(1000);
+        // });
+        // $('#btn_3').on('click', function() {
+        //     $('img').toggle(1000);
+        // });
+
+        $('#btn_1').on('click', function() {
+            $('img').fadeOut(1000);
+        });
+        $('#btn_2').on('click', function() {
+            $('img').fadeIn(1000);
+        });
+        $('#btn_3').on('click', function() {
+            $('img').fadeToggle(1000);
+        });
+
+        // $('#btn_1').on('click', function() {
+        //     $('div').slideUp(1000);
+        // });
+        // $('#btn_2').on('click', function() {
+        //     $('div').slideDown(1000);
+        // });
+        // $('#btn_3').on('click', function() {
+        //     $('div').slideToggle(1000);
+        // });
+    </script>
+
+</body>
+</html>

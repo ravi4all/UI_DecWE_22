@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Scroll to bottom</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#projects">Projects</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <h1>This  is my web resume</h1>
+        <img src="../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg" alt="">
+    </section>
+    <section id="gallery">
+        <h2>This is gallery</h2>
+        <img src="../images/bahubali.jpg" alt="">
+        <img src="../images/bahubali.jpg" alt="">
+    </section>
+    <section id="projects">
+        <h2>This is projects Sections</h2>
+        <img src="../images/dhoni.jpg" alt="">
+        <img src="../images/dhoni.jpg" alt="">
+        <img src="../images/dhoni.jpg" alt="">
+    </section>
+    
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $('a').click(function() {
+            var href = $(this).attr('href');
+            // console.log(hash);
+            $('html, body').animate({
+                scrollTop : $(href).offset().top
+            }, 1000, function(){
+                window.location.hash = href;
+            })
+        })
+    </script>
+</body>
+</html>
